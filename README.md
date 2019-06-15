@@ -8,6 +8,7 @@ My first ever developed game, coded in Python, is a platform type game where you
 `python3 pygame_1.py`
 
 ## Screenshots
+<img src= https://github.com/eedelosreyes2/Python-Game/blob/master/images/homescreen.png>
 <img src= https://github.com/eedelosreyes2/Python-Game/blob/master/images/ingame.png>
 
 Relevant bug:
