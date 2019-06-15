@@ -1,7 +1,7 @@
 # Python Game
 My first ever developed game, coded in Python, is a platform type game where you try to avoid falling objects!
 
-!(https://github.com/eedelosreyes2/Python-Game/blob/master/images/ingame.png)
+<img src= https://github.com/eedelosreyes2/Python-Game/blob/master/images/ingame.png>
 
 ## How to run:
 1. Download ZIP
