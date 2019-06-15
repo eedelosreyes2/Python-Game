@@ -1,6 +1,8 @@
 # Python Game
 My first ever developed game, coded in Python, is a platform type game where you try to avoid falling objects!
 
+!(ingame)
+
 ## How to run:
 1. Download ZIP
 2. In terminal, cd into `Python-Game-master` folder

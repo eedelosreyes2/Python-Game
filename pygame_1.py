@@ -44,11 +44,11 @@ def instructions():
     gameDisplay.blit(space, (5, 80))
 
 def hay(thingx, thingy, thingw, thingh):
-    hayImg = pygame.image.load("hay.png")
+    hayImg = pygame.image.load("images/hay.png")
     gameDisplay.blit(hayImg, [thingx, thingy, thingw, thingh])
 
 def pig(x, y):
-    pigImg = pygame.image.load("pig.png")
+    pigImg = pygame.image.load("images/pig.png")
     gameDisplay.blit(pigImg, (x, y))
 
 def text_objects(text, font):
@@ -97,8 +97,8 @@ def game_credits():
         medText((display_width / 2), (225), credits_smallText2)
         medText((display_width / 2), (275), credits_smallText3)
 
-        hayImg = pygame.image.load("hay.png")
-        pigImg = pygame.image.load("pig.png")
+        hayImg = pygame.image.load("images/hay.png")
+        pigImg = pygame.image.load("images/pig.png")
         gameDisplay.blit(hayImg, (200, 480))
         pigImg_hoFlip = pygame.transform.flip(pigImg, True, False)
         gameDisplay.blit(pigImg_hoFlip, (220, 375))
@@ -149,10 +149,10 @@ def game_intro():
         secondary_TextRect.center = ((display_width / 1.5), (display_height / 4))
         gameDisplay.blit(secondary_TextSurf, secondary_TextRect)
 
-        hayImg = pygame.image.load("hay.png")
+        hayImg = pygame.image.load("images/hay.png")
         hayImg_320 = pygame.transform.rotate(hayImg, 320)
         hayImg_40 = pygame.transform.rotate(hayImg, 40)
-        pigImg = pygame.image.load("pig.png")
+        pigImg = pygame.image.load("images/pig.png")
         gameDisplay.blit(hayImg, (0, 480))
         gameDisplay.blit(hayImg, (235, 480))
         gameDisplay.blit(hayImg, (0, 370))
