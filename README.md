@@ -5,7 +5,7 @@ My first ever developed game, coded in Python, is a platform type game where you
 1. Download ZIP
 2. In terminal, cd into `Python-Game-master` folder
 3. Run the following command:
-`python3 pygame_1.py`
+`python3 pygame_1.py` (if that doesn't work, try running `python -m pip install pygame` in the same directory and then try again)
 
 ## Screenshots
 <img src= https://github.com/eedelosreyes2/Python-Game/blob/master/images/homescreen.png>
