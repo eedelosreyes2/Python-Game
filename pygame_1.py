@@ -20,24 +20,24 @@ clock = pygame.time.Clock()
 pause = False
 
 def smallText(x, y, text):
-    smallText = pygame.font.Font("/Library/Fonts/Amatic-Bold.ttf", 35)
+    smallText = pygame.font.Font()
     small_TextSurf, small_TextRect = text_objects(text, smallText)
     small_TextRect.center = (x, y)
     gameDisplay.blit(small_TextSurf, small_TextRect)
 
 def medText(x, y, text):
-    medText = pygame.font.Font("/Library/Fonts/Amatic-Bold.ttf", 50)
+    medText = pygame.font.Font()
     med_TextSurf, med_TextRect = text_objects(text, medText)
     med_TextRect.center = (x, y)
     gameDisplay.blit(med_TextSurf, med_TextRect)
 
 def things_dodged(count):
-    font = pygame.font.Font("/Library/Fonts/Amatic-Bold.ttf", 100)
+    font = pygame.font.Font()
     text = font.render(str(count), True, black)
     gameDisplay.blit(text, (display_width/2, 0))
 
 def instructions():
-    font = pygame.font.Font("/Library/Fonts/Amatic-Bold.ttf", 35)
+    font = pygame.font.Font()
     text = font.render("press the LEFT and RIGHT arrow keys!", True, black)
     space = font.render("press SPACEBAR to pause!", True, black)
     gameDisplay.blit(text, (5, 40))
@@ -56,7 +56,7 @@ def text_objects(text, font):
     return textSurface, textSurface.get_rect()
 
 def message_display(text):
-    largeText = pygame.font.Font("/Library/Fonts/Amatic-Bold.ttf", 125)
+    largeText = pygame.font.Font()
     TextSurf, TextRect = text_objects(text, largeText)
     TextRect.center = ((display_width / 2), (display_height / 2))
     gameDisplay.blit(TextSurf, TextRect)
@@ -123,7 +123,7 @@ def paused():
                 if event.key == pygame.K_ESCAPE:
                     game_intro()
 
-        largeText = pygame.font.Font("/Library/Fonts/Amatic-Bold.ttf", 125)
+        largeText = pygame.font.Font()
         TextSurf, TextRect = text_objects("paused", largeText)
         TextRect.center = ((display_width / 2), (display_height / 2))
         gameDisplay.blit(TextSurf, TextRect)
@@ -139,12 +139,12 @@ def game_intro():
                 quit()
 
         gameDisplay.fill(white)
-        largeText = pygame.font.Font("/Library/Fonts/Amatic-Bold.ttf", 125)
+        largeText = pygame.font.Font()
         TextSurf, TextRect = text_objects("dont get hit by the hay", largeText)
         TextRect.center = ((display_width / 2), (display_height / 10))
         gameDisplay.blit(TextSurf, TextRect)
 
-        secondary_largeText = pygame.font.Font("/Library/Fonts/Amatic-Bold.ttf", 40)
+        secondary_largeText = pygame.font.Font()
         secondary_TextSurf, secondary_TextRect = text_objects("by: elijah delos reyes", secondary_largeText)
         secondary_TextRect.center = ((display_width / 1.5), (display_height / 4))
         gameDisplay.blit(secondary_TextSurf, secondary_TextRect)
